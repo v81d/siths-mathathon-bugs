@@ -22,7 +22,7 @@ Through the endpoint `/api/updateBalance`, you can set your balance to Infinity.
 
 You can also set your balance to NaN or a negative number.
 
-The `mines_balance_editor.py` tool in this repository allows you to edit anyone's balance, albeit it doesn't seem to work very well.
+The `mines_balance_editor.py` tool in this repository allows you to edit anyone's balance, albeit it doesn't seem to work when targeting other users.
 
 ### 2. Bet a Negative Amount
 If you remove `disabled=""` property from the Bet button in the Mines minigame, you can bet a negative amount on the game, thus increasing your balance.
