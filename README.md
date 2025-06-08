@@ -11,7 +11,7 @@ The goal of this repository is to demonstrate the major security vulnerabilities
 ---
 
 ## BUGS
-The bugs below have been discovered by Aaron Wijesinghe and Anthony He. Items #4, #5, and #6 have been resolved as of the last commit.
+The bugs below have been discovered by [Aaron Wijesinghe](https://github.com/introvertednoob) by and [me](https://github.com/v81d). Items #4, #5, and #6 have been resolved as of the last commit.
 
 ### 1. Change Mines Balance
 Through the endpoint `/api/updateBalance`, you can set your balance to Infinity.
