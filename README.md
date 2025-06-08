@@ -11,7 +11,7 @@ The goal of this repository is to demonstrate the major security vulnerabilities
 ---
 
 ## BUGS
-The bugs below have been discovered by [Aaron Wijesinghe](https://github.com/introvertednoob) by and [me](https://github.com/v81d). We are not affiliated with the SITHS Math-a-Thon website development team.
+The bugs below have been discovered by [Aaron Wijesinghe](https://github.com/introvertednoob) by and [me](https://github.com/v81d). We are not affiliated with the SITHS Math-a-Thon website development team. [Link to Aaron's version of this repository, which contains additional information.](https://github.com/introvertednoob/mathathon-exploits)
 Items #4, #5, and #6 have been resolved as of the last commit.
 
 ### 1. Change Mines Balance
