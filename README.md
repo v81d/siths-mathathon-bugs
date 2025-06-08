@@ -64,7 +64,9 @@ The endpoint `/api/retreiveLeaderboard` is unprotected and can easily be viewed 
 
 The `retrieve_leaderboard.py` script fetches the entire leaderboard and outputs it into a file.
 
-### 9. Spoof the Contact Form
+### 9. Spoof Contact Form
 You can send a contact form on someone else's behalf by, again, removing the `disabled=""` tag from the form elements.
 
 This can be exploited to spam the email service and essentially spoof your identity (as someone else) while doing so.
+
+You can also send a request to the unprotected endpoint `/api/submitContactForm`, as demonstrated in the script `send_contact.py`, which emulates free contact form in the terminal.
