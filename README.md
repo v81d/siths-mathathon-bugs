@@ -69,4 +69,4 @@ You can send a contact form on someone else's behalf by, again, removing the `di
 
 This can be exploited to spam the email service and essentially spoof your identity (as someone else) while doing so.
 
-You can also send a request to the unprotected endpoint `/api/submitContactForm`, as demonstrated in the script `send_contact.py`, which emulates free contact form in the terminal.
+You can also send a request to the unprotected endpoint `/api/submitContactForm`, as demonstrated in the script `send_contact.py`, which emulates the contact form directly in the terminal.
