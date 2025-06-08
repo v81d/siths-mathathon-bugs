@@ -67,4 +67,4 @@ The `retrieve_leaderboard.py` script fetches the entire leaderboard and outputs 
 ### 9. Spoof the Contact Form
 You can send a contact form on someone else's behalf by, again, removing the `disabled=""` tag from the form elements.
 
-This can be exploited to spam the email service and essentially spoof your identity while doing so.
+This can be exploited to spam the email service and essentially spoof your identity (as someone else) while doing so.
