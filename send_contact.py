@@ -25,8 +25,6 @@ while True:
     subject = input_("email subject")
     body = input_("email body")
 
-    clear()
-
     body = {
         "name": name,
         "email": email,
