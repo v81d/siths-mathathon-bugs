@@ -22,6 +22,8 @@ Through the endpoint `/api/updateBalance`, you can set your balance to Infinity.
 
 You can also set your balance to NaN or a negative number.
 
+The `mines_balance_editor.py` tool in this repository allows you to edit anyone's balance, albeit it doesn't seem to work very well.
+
 ### 2. Bet a Negative Amount
 If you remove `disabled=""` property from the Bet button in the Mines minigame, you can bet a negative amount on the game, thus increasing your balance.
 
@@ -61,3 +63,8 @@ Like the Mines minigame balance exploit, this bug is powered by a simple removal
 The endpoint `/api/retreiveLeaderboard` is unprotected and can easily be viewed by anyone without any credentials.
 
 The `retrieve_leaderboard.py` script fetches the entire leaderboard and outputs it into a file.
+
+### 9. Spoof the Contact Form
+You can send a contact form on someone else's behalf by, again, removing the `disabled=""` tag from the form elements.
+
+This can be exploited to spam the email service and essentially spoof your identity while doing so.

@@ -96,7 +96,7 @@ def send_req():  # Funtion allows the action to be run recursively
         )  # Update the dotenv file with the new JWT
 
         restart = input(
-            f":: (Y/n) Your JSON Web Token has regenerated since it might have been expired. Would you like to retry the request? "
+            f":: [Y/n] Your JSON Web Token has regenerated since it might have been expired. Would you like to retry the request? "
         )
         if restart.lower() == "n":
             return False
@@ -105,7 +105,7 @@ def send_req():  # Funtion allows the action to be run recursively
     else:
         print("\n" + resp.text)
         restart = input(
-            ":: (Y/n) Successfully edited activity; the updates will appear shortly. Would you like to restart the program? "
+            ":: [Y/n] Successfully edited activity; the updates will appear shortly. Would you like to restart the program? "
         )
         if restart.lower() == "n":
             return False
@@ -145,7 +145,7 @@ try:
             id = int(id_inp) - 1
         except ValueError:
             restart = input(
-                ":: (Y/n) Your input is not a valid number. Would you like to restart the program? "
+                ":: [Y/n] Your input is not a valid number. Would you like to restart the program? "
             )
             if restart == "n":
                 break
@@ -153,7 +153,7 @@ try:
                 continue
         if id > len(sanity) - 1:
             restart = input(
-                ":: (Y/n) Your selected message is out of range. Would you like to restart the program? "
+                ":: [Y/n] Your selected message is out of range. Would you like to restart the program? "
             )
             if restart == "n":
                 break
@@ -175,7 +175,7 @@ try:
         print(
             "\nAbove are the potential placements of your edited message along with their respective times. Edit accordingly.\n"
         )
-        date = input(":: (SKIP/input) Enter the new date: ")
+        date = input(":: [SKIP/input] Enter the new date: ")
         if date == "":
             data = data.replace(
                 "__DATE__",
@@ -194,7 +194,7 @@ try:
         print(f"=> Editing Message (ID={sanity[id]["_id"]})\n")
         data = data.replace(
             "__CONTENT__",
-            input(":: (EMPTY/input) Enter the new content of your message: "),
+            input(":: [EMPTY/input] Enter the new content of your message: "),
         )
         if has_valid_date(id):
             data = data.replace(
@@ -211,7 +211,7 @@ try:
         clear()
 
         confirm = input(
-            f"Editing Message (ID={sanity[id]["_id"]})]\n{eval(json.dumps(data, indent=4))}\n:: (Y/n) Confirm update(s)? "
+            f"Editing Message (ID={sanity[id]["_id"]})]\n{eval(json.dumps(data, indent=4))}\n:: [Y/n] Confirm update(s)? "
         )
         if confirm.lower() == "n":
             break
