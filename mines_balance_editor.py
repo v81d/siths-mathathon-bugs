@@ -173,15 +173,18 @@ while True:
     balance = input(
         f":: Enter a new balance for {decoded_jwt["user_metadata"]["email"]} ({decoded_jwt["user_metadata"]["name"]}): "
     )
-    if balance.isnumeric():
+    try:
         balance = int(balance)
-    elif balance.lower() == "inf":
-        balance = inf
-    elif balance.lower() == "-inf":
-        balance = -inf
-    else:
-        print("The provided input is not a valid number. The task has been terminated.")
-        os._exit(1)
+    except:
+        if balance.lower() == "inf":
+            balance = inf
+        elif balance.lower() == "-inf":
+            balance = -inf
+        else:
+            print(
+                "The provided input is not a valid number. The task has been terminated."
+            )
+            os._exit(1)
 
     # Update the balance
     if not send_req(balance):
